@@ -28,15 +28,18 @@ def get_company_info(company):
 def analyze_company(summary):
 
     prompt = f"""
-    Based on this company description:
+    You are helping a B2B sales team research a company.
+
+    Company description:
 
     {summary}
 
-    Provide:
+    Provide the following in a structured format:
     1. Industry
-    2. Key services
+    2. Key services/products
     3. Potential business travel needs
-    4. Short company summary
+    4. Why this company might need travel management software
+    5. Short company summary
     """
 
     response = ollama.chat(

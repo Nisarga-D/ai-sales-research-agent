@@ -1,0 +1,4 @@
+ollama
+wikipedia
+beautifulsoup4
+lxml

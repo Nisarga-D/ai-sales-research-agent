@@ -1,39 +1,46 @@
-# AI Sales Research Agent
+AI Sales Research Agent
 
-A Python automation tool that generates structured company research reports using web data and local LLMs.
+A Python-powered AI tool that automates company research for B2B sales teams.
 
-## Problem
-Sales and growth teams often spend significant time researching companies before outreach. This project automates initial company research.
+The application collects company information and generates structured research reports using a local LLM.
 
-## Solution
-The tool:
-1. Takes a company name as input
-2. Collects company information from Wikipedia
-3. Uses a local LLM (Ollama) to analyze the company
-4. Generates a structured research brief
+## Features
 
-## Example Output
+- Automated company research
+- AI-generated business insights
+- Structured research reports
+- Downloadable reports
+- Simple web interface built with Streamlit
 
-Industry: Financial Technology
+## Demo
 
-Key Services:
-- Payment processing
-- Financial APIs
-- Online business infrastructure
+### Input Interface
+<img width="1902" height="825" alt="Screenshot 2026-03-05 164102" src="https://github.com/user-attachments/assets/4aa4c595-3822-4213-a41b-43b11d6a0a98" />
 
-Potential Business Travel Needs:
-- Client meetings
-- Conferences
-- Sales outreach
+
+
+### Generated Research Report
+<img width="1019" height="782" alt="Screenshot 2026-03-05 164159" src="https://github.com/user-attachments/assets/74641633-52fd-47d9-8f7c-319c3461c3ea" />
+<img width="689" height="775" alt="Screenshot 2026-03-05 164437" src="https://github.com/user-attachments/assets/4fd2207f-c3a1-4f3a-b625-3ab5c3b2ce0f" />
+<img width="1147" height="723" alt="Screenshot 2026-03-05 164451" src="https://github.com/user-attachments/assets/6e416adf-95f4-4d19-ad32-19a00de46feb" />
+<img width="1088" height="374" alt="Screenshot 2026-03-05 164500" src="https://github.com/user-attachments/assets/dfb3decb-6ebc-4f5c-a401-7c90749b2878" />
+
+## How It Works
+
+1. Enter a company name
+2. The tool retrieves company information from Wikipedia
+3. A local LLM analyzes the company
+4. A structured research report is generated
 
 ## Tech Stack
-- Python
-- Ollama (local LLM)
-- Wikipedia API
-- BeautifulSoup
 
-## Run the Project
+- Python
+- Streamlit
+- Ollama (Local LLM)
+- Wikipedia API
+
+## Run the App
 
 ```bash
 pip install -r requirements.txt
-python research_agent.py
+streamlit run app.py
